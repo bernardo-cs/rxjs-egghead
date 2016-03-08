@@ -1,13 +1,14 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
+var path = require("path");
 
 module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./src/main.js",
   output: {
-    path: __dirname + "/js",
-    filename: "build.min.js"
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js"
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
