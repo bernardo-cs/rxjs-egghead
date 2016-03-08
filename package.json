@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-typescript-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^5.0.0-beta.2",
+    "webpack": "^1.12.14"
+  }
+}
